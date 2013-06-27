@@ -1,0 +1,62 @@
+book:
+    pattern:  /
+    defaults: { _controller: "TestBookBundle:Book:index" }
+
+book_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TestBookBundle:Book:show" }
+
+book_new:
+    pattern:  /new
+    defaults: { _controller: "TestBookBundle:Book:new" }
+
+book_create:
+    pattern:  /create
+    defaults: { _controller: "TestBookBundle:Book:create" }
+    requirements: { _method: post }
+
+book_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TestBookBundle:Book:edit" }
+
+book_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TestBookBundle:Book:update" }
+    requirements: { _method: post|put }
+
+book_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TestBookBundle:Book:delete" }
+    requirements: { _method: post|delete }
+
+#-- author
+author:
+    pattern:  /author/
+    defaults: { _controller: "TestBookBundle:Author:index" }
+
+author_show:
+    pattern:  /author/{id}/show
+    defaults: { _controller: "TestBookBundle:Author:show" }
+
+author_new:
+    pattern:  /author/new
+    defaults: { _controller: "TestBookBundle:Author:new" }
+
+author_create:
+    pattern:  /author/create
+    defaults: { _controller: "TestBookBundle:Author:create" }
+    requirements: { _method: post }
+
+author_edit:
+    pattern:  /author/{id}/edit
+    defaults: { _controller: "TestBookBundle:Author:edit" }
+
+author_update:
+    pattern:  /author/{id}/update
+    defaults: { _controller: "TestBookBundle:Author:update" }
+    requirements: { _method: post|put }
+
+author_delete:
+    pattern:  /author/{id}/delete
+    defaults: { _controller: "TestBookBundle:Author:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,12 @@
+test_common:
+    resource: "@TestCommonBundle/Resources/config/routing.yml"
+    prefix:   /
+
+test_film:
+    resource: "@TestFilmBundle/Resources/config/routing.yml"
+    prefix:   /film/
+
+test_book:
+    resource: "@TestBookBundle/Resources/config/routing.yml"
+    prefix:   /book/
+

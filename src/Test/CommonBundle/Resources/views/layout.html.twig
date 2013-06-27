@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}{% endblock %} | Testing work</title>
+    {#<link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />#}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    {% block includes %}{% endblock %}
+</head>
+<body>
+
+<header>
+    {% include 'TestCommonBundle::_nav.html.twig' %}
+
+    {% block header %}{% endblock %}
+</header>
+
+<section>
+
+    {% block content %}
+
+    {% endblock %}
+
+    {#<article>#}
+        {#<header>#}
+            {#<h2>Title Goes here</h2>#}
+
+            {#<p>Posted on#}
+                {#<time datetime="2012-07-28T13:00:24+01:00">July 28th 2012</time>#}
+                {#by <a href="#">Author</a> - <a href="#comments">12 comments</a></p>#}
+        {#</header>#}
+        {#<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>#}
+    {#</article>#}
+
+</section>
+
+<aside>
+    {% block aside %}
+
+    {% endblock %}
+</aside>
+
+<footer>
+    {% block footer %}
+        <p>Copyright 2013 Test ©</p>
+    {% endblock %}
+</footer>
+
+{% block js_container %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+tag:
+    pattern:  /tag/
+    defaults: { _controller: "TestCommonBundle:Tag:index" }
+
+tag_show:
+    pattern:  /tag/{id}/show
+    defaults: { _controller: "TestCommonBundle:Tag:show" }
+
+tag_new:
+    pattern:  /tag/new
+    defaults: { _controller: "TestCommonBundle:Tag:new" }
+
+tag_create:
+    pattern:  /tag/create
+    defaults: { _controller: "TestCommonBundle:Tag:create" }
+    requirements: { _method: post }
+
+tag_edit:
+    pattern:  /tag/{id}/edit
+    defaults: { _controller: "TestCommonBundle:Tag:edit" }
+
+tag_update:
+    pattern:  /tag/{id}/update
+    defaults: { _controller: "TestCommonBundle:Tag:update" }
+    requirements: { _method: post|put }
+
+tag_delete:
+    pattern:  /tag/{id}/delete
+    defaults: { _controller: "TestCommonBundle:Tag:delete" }
+    requirements: { _method: post|delete }

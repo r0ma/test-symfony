@@ -1,0 +1,22 @@
+{% extends "TestCommonBundle::layout.html.twig" %}
+
+{% block header %}
+    <h1>Actor creation</h1>
+{% endblock %}
+
+{% block content -%}
+    <form action="{{ path('actor_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('actor') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

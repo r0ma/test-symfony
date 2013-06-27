@@ -1,0 +1,94 @@
+film:
+    pattern:  /
+    defaults: { _controller: "TestFilmBundle:Film:index" }
+
+film_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TestFilmBundle:Film:show" }
+
+film_new:
+    pattern:  /new
+    defaults: { _controller: "TestFilmBundle:Film:new" }
+
+film_create:
+    pattern:  /create
+    defaults: { _controller: "TestFilmBundle:Film:create" }
+    requirements: { _method: post }
+
+film_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TestFilmBundle:Film:edit" }
+
+film_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TestFilmBundle:Film:update" }
+    requirements: { _method: post|put }
+
+film_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TestFilmBundle:Film:delete" }
+    requirements: { _method: post|delete }
+
+#-- actor
+actor:
+    pattern:  /actor/
+    defaults: { _controller: "TestFilmBundle:Actor:index" }
+
+actor_show:
+    pattern:  /actor/{id}/show
+    defaults: { _controller: "TestFilmBundle:Actor:show" }
+
+actor_new:
+    pattern:  /actor/new
+    defaults: { _controller: "TestFilmBundle:Actor:new" }
+
+actor_create:
+    pattern:  /actor/create
+    defaults: { _controller: "TestFilmBundle:Actor:create" }
+    requirements: { _method: post }
+
+actor_edit:
+    pattern:  /actor/{id}/edit
+    defaults: { _controller: "TestFilmBundle:Actor:edit" }
+
+actor_update:
+    pattern:  /actor/{id}/update
+    defaults: { _controller: "TestFilmBundle:Actor:update" }
+    requirements: { _method: post|put }
+
+actor_delete:
+    pattern:  /actor/{id}/delete
+    defaults: { _controller: "TestFilmBundle:Actor:delete" }
+    requirements: { _method: post|delete }
+
+#-- quality
+quality:
+    pattern:  /quality/
+    defaults: { _controller: "TestFilmBundle:Quality:index" }
+
+quality_show:
+    pattern:  /quality/{id}/show
+    defaults: { _controller: "TestFilmBundle:Quality:show" }
+
+quality_new:
+    pattern:  /quality/new
+    defaults: { _controller: "TestFilmBundle:Quality:new" }
+
+quality_create:
+    pattern:  /quality/create
+    defaults: { _controller: "TestFilmBundle:Quality:create" }
+    requirements: { _method: post }
+
+quality_edit:
+    pattern:  /quality/{id}/edit
+    defaults: { _controller: "TestFilmBundle:Quality:edit" }
+
+quality_update:
+    pattern:  /quality/{id}/update
+    defaults: { _controller: "TestFilmBundle:Quality:update" }
+    requirements: { _method: post|put }
+
+quality_delete:
+    pattern:  /quality/{id}/delete
+    defaults: { _controller: "TestFilmBundle:Quality:delete" }
+    requirements: { _method: post|delete }

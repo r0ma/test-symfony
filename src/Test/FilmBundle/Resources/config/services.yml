@@ -1,0 +1,7 @@
+parameters:
+#    test_film.example.class: Test\FilmBundle\Example
+
+services:
+#    test_film.example:
+#        class: %test_film.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
