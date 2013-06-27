@@ -11,3 +11,8 @@ web/bundles/*
 # Configuration files
 app/config/parameters.ini
 app/config/parameters.yml
+
+# Other
+.idea/*
+.DS_Store
+*/.DS_Store
